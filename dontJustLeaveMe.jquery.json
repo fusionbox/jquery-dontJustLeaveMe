@@ -1,9 +1,11 @@
 {
   "name": "dontJustLeaveMe",
   "version": "0.0.1",
-  "title": "Prompts before leaving a page with modified form data.",
+  "title": "dontJustLeaveMe",
+  "description": "Prompts before leaving a page with modified form data.",
   "author": {
-    "name": "Fusionbox"
+    "name": "Fusionbox",
+    "url": "http://www.fusionbox.com/"
   },
   "licenses": [{
       "type": "BSD-2-Clause",
