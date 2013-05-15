@@ -1,8 +1,8 @@
 {
   "name": "dontJustLeaveMe",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "title": "dontJustLeaveMe",
-  "description": "Prompts before leaving a page with modified form data.",
+  "description": "Prompts before leaving a page with modified or dirty form data.",
   "author": {
     "name": "Fusionbox",
     "url": "http://www.fusionbox.com/"
@@ -15,6 +15,10 @@
     "jquery": ">=1.7"
   },
   "keywords": [
-    "onbeforeunload"
-  ]
+    "beforeunload",
+    "onbeforeunload",
+    "onunload",
+    "forms"
+  ],
+  "homepage": "https://github.com/fusionbox/jquery-dontJustLeaveMe"
 }
