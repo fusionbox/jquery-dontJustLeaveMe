@@ -1,6 +1,6 @@
 {
   "name": "dontJustLeaveMe",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "title": "dontJustLeaveMe",
   "description": "Prompts before leaving a page with modified or dirty form data.",
   "author": {
