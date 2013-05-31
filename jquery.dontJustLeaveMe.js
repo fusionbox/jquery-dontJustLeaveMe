@@ -44,6 +44,12 @@
    * data though, for the record.
    */
   function serializeForm(form) {
+    if ( window.CKEDITOR )
+      // force all ckeditors to write back their values to their element
+      for ( var name in CKEDITOR.instances )
+        if ( CKEDITOR.instances.hasOwnProperty(name) )
+          CKEDITOR.instances[name].updateElement();
+
     var vars = $.map(filterUndesirables(form.find(':input[name]')), function(elem) {
       return elem.name + '=' + $(elem).val();
     });
