@@ -1,0 +1,76 @@
+<!doctype html>
+<title>dontJustLeaveMe demo</title>
+<style type="text/css">
+  html, body {
+    margin: 0 auto;
+    max-width: 500px;
+    font: 13px/22px Helvetica, Arial, sans-serif;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 1em;
+  }
+
+  fieldset label {
+    margin-bottom: 0;
+  }
+
+  input[type=submit] {
+    margin-top: 1em;
+  }
+
+  h2 {
+    margin-top: 1em;
+  }
+</style>
+<h1>jquery-dontJustLeaveMe demo</h1>
+<h2>Form 1</h2>
+<form>
+  <label>name<input name=foo></label>
+  <label>email<input name=bar type=email value="olddata@example.com"></label>
+  <fieldset>
+    <legend>favorite color</legend>
+    <label>red<input name=baz type=radio value=1></label>
+    <label>green<input name=baz type=radio value=2 checked></label>
+    <label>blue<input name=baz type=radio value=3></label>
+  </fieldset>
+  <label>
+    yes or no?
+    <select name=bomb>
+      <option></option>
+      <option>yes</option>
+      <option>no</option>
+    </select>
+  </label>
+  <input type=submit>
+</form>
+
+<h2>Form 2</h2>
+
+<form>
+  <input name=foo>
+  <input type=submit>
+</form>
+
+<h2>CKEditor</h2>
+<form>
+  <textarea id=ckeditor name=foo></textarea>
+  <input type=submit>
+</form>
+
+<script src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/ckeditor/4.0.1/ckeditor.js"></script>
+<script src="jquery.dontJustLeaveMe.js"></script>
+<script>
+  $('form').dontJustLeaveMe();
+  CKEDITOR.replace($('#ckeditor')[0]);
+</script>
